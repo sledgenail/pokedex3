@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11760" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pokedex3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2P-32-mrk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="psc-h5-cJS"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zao-XR-RIm">
+                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qES-YG-wC2"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RpJ-il-0De">
+                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zao-XR-RIm" firstAttribute="top" secondItem="g2P-32-mrk" secondAttribute="bottom" id="3Mz-O7-GRw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RpJ-il-0De" secondAttribute="bottom" id="DGq-UH-1fx"/>
+                            <constraint firstAttribute="trailing" secondItem="g2P-32-mrk" secondAttribute="trailing" id="G95-le-rxL"/>
+                            <constraint firstAttribute="trailing" secondItem="RpJ-il-0De" secondAttribute="trailing" id="I7S-C8-Qwb"/>
+                            <constraint firstItem="g2P-32-mrk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Rtj-8g-Om5"/>
+                            <constraint firstAttribute="trailing" secondItem="zao-XR-RIm" secondAttribute="trailing" id="aj5-iZ-yd4"/>
+                            <constraint firstItem="g2P-32-mrk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="coi-yJ-Z7Z"/>
+                            <constraint firstItem="RpJ-il-0De" firstAttribute="top" secondItem="zao-XR-RIm" secondAttribute="bottom" id="n2M-YE-Kas"/>
+                            <constraint firstItem="RpJ-il-0De" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qHC-Wd-REX"/>
+                            <constraint firstItem="zao-XR-RIm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vcY-j4-7ln"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
